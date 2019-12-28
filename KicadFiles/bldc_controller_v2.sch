@@ -366,9 +366,9 @@ Wire Wire Line
 	5500 1000 5950 1000
 Text Label 1800 1750 0    50   ~ 0
 EXT_nRST
-Text Label 1800 2150 0    50   ~ 0
+Text Label 1800 2050 0    50   ~ 0
 TXD
-Text Label 1800 2250 0    50   ~ 0
+Text Label 1800 2150 0    50   ~ 0
 RXD
 $Comp
 L power:+12V #PWR023
@@ -730,12 +730,12 @@ $EndComp
 $Comp
 L power:+BATT #PWR05
 U 1 1 5DC4550F
-P 2400 850
-F 0 "#PWR05" H 2400 700 50  0001 C CNN
-F 1 "+BATT" H 2415 1023 50  0000 C CNN
-F 2 "" H 2400 850 50  0001 C CNN
-F 3 "" H 2400 850 50  0001 C CNN
-	1    2400 850 
+P 2400 900
+F 0 "#PWR05" H 2400 750 50  0001 C CNN
+F 1 "+BATT" H 2415 1073 50  0000 C CNN
+F 2 "" H 2400 900 50  0001 C CNN
+F 3 "" H 2400 900 50  0001 C CNN
+	1    2400 900 
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -809,17 +809,6 @@ F 3 "" H 12350 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12650 2250 12650 2100
-$Comp
-L power:GNDPWR #PWR06
-U 1 1 5E79C61A
-P 2400 1250
-F 0 "#PWR06" H 2400 1050 50  0001 C CNN
-F 1 "GNDPWR" H 2404 1096 50  0000 C CNN
-F 2 "" H 2400 1200 50  0001 C CNN
-F 3 "" H 2400 1200 50  0001 C CNN
-	1    2400 1250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5E8AD92E
@@ -971,16 +960,9 @@ Connection ~ 12650 1600
 Wire Wire Line
 	11900 1600 11450 1600
 Wire Wire Line
-	2050 850  2400 850 
+	2050 900  2400 900 
 Wire Wire Line
-	2050 1050 2400 1050
-Wire Wire Line
-	2400 1050 2400 1150
-Wire Wire Line
-	2050 1150 2400 1150
-Connection ~ 2400 1150
-Wire Wire Line
-	2400 1150 2400 1250
+	2050 1100 2400 1100
 $Comp
 L Device:C C20
 U 1 1 5E46C5BD
@@ -1090,10 +1072,10 @@ Wire Wire Line
 	8550 2750 9000 2750
 Text Label 8150 1000 0    50   ~ 0
 V_MOTOR
-Text Label 2050 950  0    50   ~ 0
+Text Label 2050 1000 0    50   ~ 0
 V_MOTOR
 Wire Wire Line
-	2050 950  2400 950 
+	2050 1000 2400 1000
 Wire Wire Line
 	5050 1000 5500 1000
 Wire Wire Line
@@ -1499,12 +1481,12 @@ Wire Wire Line
 $Comp
 L Comparator:LM339 U5
 U 3 1 5E59B0A8
-P 11650 8500
-F 0 "U5" H 11650 8133 50  0000 C CNN
-F 1 "LM339" H 11650 8224 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 11600 8600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 11700 8700 50  0001 C CNN
-	3    11650 8500
+P 9050 4150
+F 0 "U5" H 9050 3783 50  0000 C CNN
+F 1 "LM339" H 9050 3874 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9000 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 9100 4350 50  0001 C CNN
+	3    9050 4150
 	-1   0    0    -1  
 $EndComp
 Text Label 10550 7750 0    50   ~ 0
@@ -1673,20 +1655,13 @@ Wire Wire Line
 	12350 8500 12350 8400
 Connection ~ 12350 8400
 Wire Wire Line
-	1750 2250 2200 2250
-Wire Wire Line
 	1750 2150 2200 2150
+Wire Wire Line
+	1750 2050 2200 2050
 Wire Wire Line
 	1750 1850 2400 1850
 Wire Wire Line
 	1750 1950 2400 1950
-Wire Wire Line
-	2400 1950 2400 2050
-Wire Wire Line
-	1750 2050 2400 2050
-Connection ~ 2400 2050
-Wire Wire Line
-	2400 2050 2400 2150
 Wire Wire Line
 	1750 2750 2150 2750
 Text Label 1750 2750 0    50   ~ 0
@@ -1695,28 +1670,6 @@ Wire Notes Line
 	3150 600  1050 600 
 Wire Notes Line
 	1050 4450 3150 4450
-$Comp
-L Connector:Screw_Terminal_01x04 J4
-U 1 1 5DDB786E
-P 1850 950
-F 0 "J4" H 1850 1200 50  0000 C CNN
-F 1 "Screw_Terminal" H 1850 650 50  0000 C CNN
-F 2 "Connector:Terminal_Block_4Pin_TH" H 1850 950 50  0001 C CNN
-F 3 "~" H 1850 950 50  0001 C CNN
-	1    1850 950 
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Male J1
-U 1 1 5E521BF3
-P 1550 1950
-F 0 "J1" H 1600 2400 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 1850 2300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1550 1950 50  0001 C CNN
-F 3 "~" H 1550 1950 50  0001 C CNN
-	1    1550 1950
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	3150 600  3150 4450
 Wire Notes Line
@@ -2088,12 +2041,12 @@ Wire Wire Line
 $Comp
 L Comparator:LM339 U5
 U 1 1 5DD3A6BE
-P 9050 4150
-F 0 "U5" H 9050 3783 50  0000 C CNN
-F 1 "LM339" H 9050 3874 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 9000 4250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 9100 4350 50  0001 C CNN
-	1    9050 4150
+P 11650 8500
+F 0 "U5" H 11650 8133 50  0000 C CNN
+F 1 "LM339" H 11650 8224 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 11600 8600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 11700 8700 50  0001 C CNN
+	1    11650 8500
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -4338,4 +4291,47 @@ Text Label 5600 6750 0    50   ~ 0
 BEMF_C
 Text Label 5600 6350 0    50   ~ 0
 AUX_IN
+Wire Wire Line
+	2400 1100 2400 1200
+$Comp
+L power:GNDPWR #PWR06
+U 1 1 5E79C61A
+P 2400 1200
+F 0 "#PWR06" H 2400 1000 50  0001 C CNN
+F 1 "GNDPWR" H 2404 1046 50  0000 C CNN
+F 2 "" H 2400 1150 50  0001 C CNN
+F 3 "" H 2400 1150 50  0001 C CNN
+	1    2400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1935174:1935174 J4
+U 1 1 5E81481B
+P 2050 900
+F 0 "J4" H 2450 1050 50  0000 C CNN
+F 1 "1935174" H 2450 550 50  0000 C CNN
+F 2 "1935174:SHDR3W110P0X500_1X3_1500X900X1140P" H 2700 1000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/1935174.pdf" H 2700 900 50  0001 L CNN
+F 4 "3 WAY SCREW TERMINAL BLOCK 5MM PITCH Phoenix Contact Non-Fused Terminal Block, 3 Way, Solder Terminals, 26 ??? 14 AWG Through Hole, Nylon, 250 V" H 2700 800 50  0001 L CNN "Description"
+F 5 "11.4" H 2700 700 50  0001 L CNN "Height"
+F 6 "651-1935174" H 2700 600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=651-1935174" H 2700 500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Phoenix Contact" H 2700 400 50  0001 L CNN "Manufacturer_Name"
+F 9 "1935174" H 2700 300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2050 900 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5E9F193C
+P 1550 1950
+F 0 "J1" H 1600 2400 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 1850 2300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1550 1950 50  0001 C CNN
+F 3 "~" H 1550 1950 50  0001 C CNN
+	1    1550 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1950 2400 2150
 $EndSCHEMATC
