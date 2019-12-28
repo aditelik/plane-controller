@@ -1057,17 +1057,6 @@ F 3 "~" H 2400 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 1900 6000 1900
-$Comp
-L Device:Ferrite_Bead FB2
-U 1 1 5E13E3A5
-P 8400 2750
-F 0 "FB2" V 8200 2750 50  0000 C CNN
-F 1 "BL01RN1A1D2B" V 8550 2750 50  0000 C CNN
-F 2 "Ferrite_THT:Ferrite_Bead_TH" V 8330 2750 50  0001 C CNN
-F 3 "~" H 8400 2750 50  0001 C CNN
-	1    8400 2750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8550 2750 9000 2750
 Text Label 8150 1000 0    50   ~ 0
@@ -4334,4 +4323,15 @@ F 3 "~" H 1550 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 1950 2400 2150
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5EB572A6
+P 8400 2750
+F 0 "JP3" H 8400 2863 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8400 2864 50  0001 C CNN
+F 2 "Jumper:Solder_Jumper_2_Pin_5A" H 8400 2750 50  0001 C CNN
+F 3 "~" H 8400 2750 50  0001 C CNN
+	1    8400 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
