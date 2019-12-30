@@ -1423,7 +1423,7 @@ U 1 1 5F9418F2
 P 13250 7000
 F 0 "J14" H 13150 6800 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 14000 6950 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13250 7000 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 13250 7000 50  0001 C CNN
 F 3 "~" H 13250 7000 50  0001 C CNN
 	1    13250 7000
 	1    0    0    -1  
@@ -1434,7 +1434,7 @@ U 1 1 5F943420
 P 12600 7000
 F 0 "J11" H 12500 6800 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 13350 6950 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12600 7000 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 12600 7000 50  0001 C CNN
 F 3 "~" H 12600 7000 50  0001 C CNN
 	1    12600 7000
 	1    0    0    -1  
@@ -1476,7 +1476,7 @@ U 1 1 5FB8FD45
 P 13200 7750
 F 0 "J12" H 13100 7550 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 13950 7700 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13200 7750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 13200 7750 50  0001 C CNN
 F 3 "~" H 13200 7750 50  0001 C CNN
 	1    13200 7750
 	1    0    0    -1  
@@ -1487,7 +1487,7 @@ U 1 1 5FB8FD4F
 P 12550 7750
 F 0 "J9" H 12450 7550 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 13300 7700 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12550 7750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 12550 7750 50  0001 C CNN
 F 3 "~" H 12550 7750 50  0001 C CNN
 	1    12550 7750
 	1    0    0    -1  
@@ -1523,7 +1523,7 @@ U 1 1 5FBD3AD4
 P 13200 8500
 F 0 "J13" H 13100 8300 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 13950 8450 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13200 8500 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 13200 8500 50  0001 C CNN
 F 3 "~" H 13200 8500 50  0001 C CNN
 	1    13200 8500
 	1    0    0    -1  
@@ -1534,7 +1534,7 @@ U 1 1 5FBD3ADE
 P 12550 8500
 F 0 "J10" H 12450 8300 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 13300 8450 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12550 8500 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 12550 8500 50  0001 C CNN
 F 3 "~" H 12550 8500 50  0001 C CNN
 	1    12550 8500
 	1    0    0    -1  
@@ -1920,7 +1920,7 @@ U 1 1 5EB45F0C
 P 8100 4350
 F 0 "J5" H 8200 4300 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 8850 4300 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 4350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8100 4350 50  0001 C CNN
 F 3 "~" H 8100 4350 50  0001 C CNN
 	1    8100 4350
 	-1   0    0    1   
@@ -3049,7 +3049,7 @@ U 1 1 5FE7347F
 P 1650 5400
 F 0 "TP4" H 1750 5650 50  0000 R CNN
 F 1 "TestPoint" H 1592 5517 50  0001 R CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1850 5400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 1850 5400 50  0001 C CNN
 F 3 "~" H 1850 5400 50  0001 C CNN
 	1    1650 5400
 	1    0    0    -1  
@@ -3073,7 +3073,7 @@ U 1 1 5FE9BF2E
 P 1150 5400
 F 0 "TP2" H 1250 5650 50  0000 R CNN
 F 1 "TestPoint" H 1092 5517 50  0001 R CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1350 5400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 1350 5400 50  0001 C CNN
 F 3 "~" H 1350 5400 50  0001 C CNN
 	1    1150 5400
 	1    0    0    -1  
@@ -3097,7 +3097,7 @@ U 1 1 5FEE8440
 P 2650 5400
 F 0 "TP34" H 2750 5650 50  0000 R CNN
 F 1 "TestPoint" H 2592 5517 50  0001 R CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2850 5400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2850 5400 50  0001 C CNN
 F 3 "~" H 2850 5400 50  0001 C CNN
 	1    2650 5400
 	1    0    0    -1  
@@ -3110,7 +3110,7 @@ U 1 1 5FEE8455
 P 2150 5400
 F 0 "TP18" H 2250 5650 50  0000 R CNN
 F 1 "TestPoint" H 2092 5517 50  0001 R CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2350 5400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2350 5400 50  0001 C CNN
 F 3 "~" H 2350 5400 50  0001 C CNN
 	1    2150 5400
 	1    0    0    -1  
