@@ -2107,7 +2107,7 @@ F 1 "D6C40 F1 LFS" H 6250 9744 50  0000 C CNN
 F 2 "Button_Switch_THT:Pushbutton_Switch_TH" H 6250 9750 50  0001 C CNN
 F 3 "~" H 6250 9750 50  0001 C CNN
 	1    6250 9550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_US R10
@@ -2200,7 +2200,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 9250 6950 9250
 Connection ~ 6950 9250
-Text Notes 6150 9700 0    50   ~ 10
+Text Notes 6150 9500 0    50   ~ 10
 ESTOP
 $Comp
 L power:GNDD #PWR035
@@ -3800,9 +3800,9 @@ Wire Wire Line
 	2150 4150 1750 4150
 Wire Wire Line
 	2150 4050 1750 4050
-Text Label 1750 4150 0    50   ~ 0
-I2C_SDA
 Text Label 1750 4050 0    50   ~ 0
+I2C_SDA
+Text Label 1750 4150 0    50   ~ 0
 I2C_SCL
 $Comp
 L power:+5V #PWR0123
