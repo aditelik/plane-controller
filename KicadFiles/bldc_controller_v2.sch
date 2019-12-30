@@ -362,10 +362,6 @@ Wire Wire Line
 	5500 1000 5950 1000
 Text Label 1800 1750 0    50   ~ 0
 EXT_nRST
-Text Label 1800 2050 0    50   ~ 0
-TXD
-Text Label 1800 2150 0    50   ~ 0
-RXD
 $Comp
 L power:+12V #PWR023
 U 1 1 5EC1FB40
@@ -896,8 +892,6 @@ F 3 "" H 2400 1700 50  0001 C CNN
 	1    2400 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 1850 2400 1700
 Wire Wire Line
 	1750 1750 2200 1750
 Wire Wire Line
@@ -1559,14 +1553,6 @@ Wire Wire Line
 Wire Wire Line
 	12350 8500 12350 8400
 Connection ~ 12350 8400
-Wire Wire Line
-	1750 2150 2200 2150
-Wire Wire Line
-	1750 2050 2200 2050
-Wire Wire Line
-	1750 1850 2400 1850
-Wire Wire Line
-	1750 1950 2400 1950
 Wire Wire Line
 	1750 2750 2150 2750
 Text Label 1750 2750 0    50   ~ 0
@@ -4003,39 +3989,37 @@ Text Label 5600 5750 0    50   ~ 0
 I2C_SCL
 Wire Wire Line
 	5450 4650 6050 4650
-Text Label 5600 6250 0    50   ~ 0
+Text Label 5600 6350 0    50   ~ 0
 nI_TRIG
-Text Label 5600 6450 0    50   ~ 0
+Text Label 5600 4750 0    50   ~ 0
 AUX_OUT
-Text Label 5600 5350 0    50   ~ 0
+Text Label 5600 4650 0    50   ~ 0
 EFUSE_EN
 Text Label 5600 5850 0    50   ~ 0
 nRESET
-Text Label 5600 6550 0    50   ~ 0
-nESTOP
-Text Label 5600 5550 0    50   ~ 0
-I_SENSE
-Text Label 5600 5450 0    50   ~ 0
-ANALOG_IN
-Text Label 5600 5250 0    50   ~ 0
-MCU_A_EN
 Text Label 5600 4850 0    50   ~ 0
+nESTOP
+Text Label 5600 5450 0    50   ~ 0
+I_SENSE
+Text Label 5600 4350 0    50   ~ 0
+MCU_A_EN
+Text Label 5600 6750 0    50   ~ 0
 MCU_B_EN
-Text Label 5600 4750 0    50   ~ 0
+Text Label 5600 6550 0    50   ~ 0
 MCU_C_EN
-Text Label 5600 4650 0    50   ~ 0
+Text Label 5600 4450 0    50   ~ 0
 MCU_A_SIG
 Text Label 5600 4550 0    50   ~ 0
 MCU_B_SIG
-Text Label 5600 4450 0    50   ~ 0
-MCU_C_SIG
-Text Label 5600 4350 0    50   ~ 0
-BEMF_B
 Text Label 5600 6650 0    50   ~ 0
+MCU_C_SIG
+Text Label 5600 6450 0    50   ~ 0
+BEMF_B
+Text Label 5600 5550 0    50   ~ 0
 BEMF_A
-Text Label 5600 6750 0    50   ~ 0
+Text Label 5600 6250 0    50   ~ 0
 BEMF_C
-Text Label 5600 6350 0    50   ~ 0
+Text Label 5600 5350 0    50   ~ 0
 AUX_IN
 Wire Wire Line
 	2400 1100 2400 1200
@@ -4078,8 +4062,6 @@ F 3 "~" H 1550 1950 50  0001 C CNN
 	1    1550 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 1950 2400 2150
 $Comp
 L Jumper:SolderJumper_2_Open JP3
 U 1 1 5EB572A6
@@ -4217,4 +4199,22 @@ Wire Wire Line
 Wire Wire Line
 	11850 5700 11850 5500
 Connection ~ 11850 5500
+Wire Wire Line
+	1750 2050 2200 2050
+Wire Wire Line
+	1750 2150 2200 2150
+Wire Wire Line
+	2400 1850 2400 1700
+Wire Wire Line
+	2400 1950 2400 2150
+Text Label 1800 2150 0    50   ~ 0
+RXD
+Text Label 1800 2050 0    50   ~ 0
+TXD
+Wire Wire Line
+	1750 1950 2400 1950
+Wire Wire Line
+	1750 1850 2400 1850
+Text Label 5600 5250 0    50   ~ 0
+ANALOG_IN
 $EndSCHEMATC
