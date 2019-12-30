@@ -3044,30 +3044,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 2750 8250 2750
 $Comp
-L Connector:TestPoint TP4
-U 1 1 5FE7347F
-P 1650 5400
-F 0 "TP4" H 1750 5650 50  0000 R CNN
-F 1 "TestPoint" H 1592 5517 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 1850 5400 50  0001 C CNN
-F 3 "~" H 1850 5400 50  0001 C CNN
-	1    1650 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 5400 1900 5400
-$Comp
-L power:GNDD #PWR04
-U 1 1 5FE9B549
-P 1900 5400
-F 0 "#PWR04" H 1900 5150 50  0001 C CNN
-F 1 "GNDD" H 1904 5245 50  0000 C CNN
-F 2 "" H 1900 5400 50  0001 C CNN
-F 3 "" H 1900 5400 50  0001 C CNN
-	1    1900 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP2
 U 1 1 5FE9BF2E
 P 1150 5400
@@ -4217,4 +4193,28 @@ Wire Wire Line
 	1750 1850 2400 1850
 Text Label 5600 5250 0    50   ~ 0
 ANALOG_IN
+$Comp
+L power:GNDD #PWR04
+U 1 1 5FE9B549
+P 1900 5400
+F 0 "#PWR04" H 1900 5150 50  0001 C CNN
+F 1 "GNDD" H 1904 5245 50  0000 C CNN
+F 2 "" H 1900 5400 50  0001 C CNN
+F 3 "" H 1900 5400 50  0001 C CNN
+	1    1900 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5400 1900 5400
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5FE7347F
+P 1650 5400
+F 0 "TP4" H 1750 5650 50  0000 R CNN
+F 1 "TestPoint" H 1592 5517 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 1850 5400 50  0001 C CNN
+F 3 "~" H 1850 5400 50  0001 C CNN
+	1    1650 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
