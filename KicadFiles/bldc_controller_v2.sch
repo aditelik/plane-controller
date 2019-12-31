@@ -752,17 +752,6 @@ F 3 "~" H 11500 1800 50  0001 C CNN
 	1    11500 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5E8AD92E
-P 6800 1000
-F 0 "JP1" H 6800 1113 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 6800 1114 50  0001 C CNN
-F 2 "Jumper:Solder_Jumper_2_Pin_5A" H 6800 1000 50  0001 C CNN
-F 3 "~" H 6800 1000 50  0001 C CNN
-	1    6800 1000
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	9900 600  9900 3300
 Connection ~ 5950 1000
@@ -996,16 +985,12 @@ Wire Wire Line
 	5500 1900 6000 1900
 Wire Wire Line
 	8550 2750 9000 2750
-Text Label 8150 1000 0    50   ~ 0
-V_MOTOR
 Text Label 2050 1000 0    50   ~ 0
 V_MOTOR
 Wire Wire Line
 	2050 1000 2400 1000
 Wire Wire Line
 	5050 1000 5500 1000
-Wire Wire Line
-	6950 1000 7100 1000
 $Comp
 L power:GNDPWR #PWR068
 U 1 1 5E32700F
@@ -3880,9 +3865,6 @@ Wire Wire Line
 	8300 4150 8400 4150
 Wire Wire Line
 	7850 4150 8300 4150
-Connection ~ 6350 1000
-Wire Wire Line
-	6350 1000 6650 1000
 $Comp
 L Switch:SW_Push_DPDT SW5
 U 1 1 5E41BD5E
@@ -4215,6 +4197,24 @@ F 1 "TestPoint" H 1592 5517 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 1850 5400 50  0001 C CNN
 F 3 "~" H 1850 5400 50  0001 C CNN
 	1    1650 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1000 7100 1000
+Text Label 8150 1000 0    50   ~ 0
+V_MOTOR
+Connection ~ 6350 1000
+Wire Wire Line
+	6350 1000 6650 1000
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5E8AD92E
+P 6800 1000
+F 0 "JP1" H 6800 1113 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6800 1114 50  0001 C CNN
+F 2 "Jumper:Solder_Jumper_2_Pin_5A" H 6800 1000 50  0001 C CNN
+F 3 "~" H 6800 1000 50  0001 C CNN
+	1    6800 1000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
