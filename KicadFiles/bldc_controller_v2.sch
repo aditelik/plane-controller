@@ -1877,9 +1877,6 @@ $EndComp
 Wire Wire Line
 	9100 5400 9250 5400
 Connection ~ 9100 5400
-Connection ~ 8250 5500
-Wire Wire Line
-	8250 5500 7850 5500
 Wire Wire Line
 	8850 5400 9100 5400
 $Comp
@@ -1941,17 +1938,6 @@ nI_TRIG
 Text Label 9400 4250 0    50   ~ 0
 I_SENSE
 $Comp
-L Device:R_US R15
-U 1 1 5DC4BFBC
-P 8250 5650
-F 0 "R15" H 8318 5696 50  0000 L CNN
-F 1 "50K" H 8318 5605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8290 5640 50  0001 C CNN
-F 3 "~" H 8250 5650 50  0001 C CNN
-	1    8250 5650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR075
 U 1 1 5EB09ED8
 P 8400 3850
@@ -1994,7 +1980,7 @@ Connection ~ 8250 5850
 Wire Wire Line
 	8850 5600 8850 5850
 Wire Wire Line
-	8250 5850 8850 5850
+	8250 5850 8400 5850
 Wire Wire Line
 	8250 5800 8250 5850
 $Comp
@@ -2013,7 +1999,7 @@ L Device:R_US R16
 U 1 1 5E6B6EF3
 P 8250 6000
 F 0 "R16" H 8400 6050 50  0000 C CNN
-F 1 "10K" H 8400 5950 50  0000 C CNN
+F 1 "1K" H 8400 5950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8290 5990 50  0001 C CNN
 F 3 "~" H 8250 6000 50  0001 C CNN
 	1    8250 6000
@@ -2071,17 +2057,6 @@ F 2 "" H 8650 5050 50  0001 C CNN
 F 3 "" H 8650 5050 50  0001 C CNN
 	1    8650 5050
 	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:MCP601-xP U4
-U 1 1 5E618F87
-P 8550 5500
-F 0 "U4" H 8700 5750 50  0000 C CNN
-F 1 "MCP601-xP" H 8850 5650 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 8450 5300 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 8700 5650 50  0001 C CNN
-	1    8550 5500
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW2
@@ -4217,4 +4192,34 @@ F 3 "~" H 6800 1000 50  0001 C CNN
 	1    6800 1000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_POT_TRIM_US RV1
+U 1 1 5E100CB4
+P 8250 5650
+F 0 "RV1" H 8150 5700 50  0000 R CNN
+F 1 "10K Pot" H 8150 5600 50  0000 R CNN
+F 2 "Potentiometer_SMD:Trimmer_Pot_SM" H 8250 5650 50  0001 C CNN
+F 3 "~" H 8250 5650 50  0001 C CNN
+	1    8250 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8250 5500
+Wire Wire Line
+	8250 5500 7850 5500
+$Comp
+L Amplifier_Operational:MCP601-xP U4
+U 1 1 5E618F87
+P 8550 5500
+F 0 "U4" H 8700 5750 50  0000 C CNN
+F 1 "MCP601-xP" H 8850 5650 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 8450 5300 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 8700 5650 50  0001 C CNN
+	1    8550 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5650 8400 5850
+Connection ~ 8400 5850
+Wire Wire Line
+	8400 5850 8850 5850
 $EndSCHEMATC

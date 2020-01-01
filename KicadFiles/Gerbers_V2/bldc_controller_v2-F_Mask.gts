@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.4)-1*
-G04 #@! TF.CreationDate,2019-12-31T15:47:17-06:00*
+G04 #@! TF.CreationDate,2020-01-01T15:02:53-06:00*
 G04 #@! TF.ProjectId,bldc_controller_v2,626c6463-5f63-46f6-9e74-726f6c6c6572,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.4)-1) date 2019-12-31 15:47:17*
+G04 Created by KiCad (PCBNEW (5.1.4)-1) date 2020-01-01 15:02:53*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
@@ -2214,4 +2214,6 @@ X154499992Y-111750000D03*
 X146000000Y-84750000D03*
 X145934527Y-95116397D03*
 X145500000Y-106000000D03*
+X130000000Y-79750000D03*
+X140250000Y-70250000D03*
 M02*
